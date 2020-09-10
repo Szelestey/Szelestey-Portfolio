@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+
+    background-image: url("../images/drawing.png");
+    background-size: 100%;
+    background-color: aquamarine;
+}

@@ -4,8 +4,53 @@
 }
 
 html, body {
-
     background-image: url("../images/drawing.png");
     background-size: 100%;
     background-color: aquamarine;
+    font-family: "verdana";
+}
+h1{
+    font-family: "Vladimir Script";
+    font-weight: bold;
+    font-size: 80px;
+    text-align: left;
+    color: black;
+    margin-left: 20%;
+}
+h2 {
+    text-align: center;
+}
+p{
+    font-family: "Times New Roman";
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    margin-left: 20%;
+}
+.card-columns {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 400px;
+}
+.websites #portfolio{
+     background-image: url("../images/portfolio.PNG");
+     background-size: 650px;
+     background-position: center;
+    color: rgba(0,0,0,0);
+ }
+.websites #portfolio:hover{
+    color: rgba(0,0,0,1);
+    background: slategrey;
+}
+.websites #hms{
+    background-image: url("../images/hms.PNG");
+    background-size: 450px;
+    background-position: center;
+    color: rgba(0,0,0,0);
+}
+.websites #hms:hover{
+   opacity: 0.5%;
 }

@@ -20,6 +20,12 @@ h1{
 h2 {
     text-align: center;
 }
+h3 {
+    font-family: "Vladimir Script";
+    font-weight: bold;
+    font-size: 38px;
+    color: black;
+}
 p{
     font-family: "Times New Roman";
     font-size: 20px;
@@ -36,21 +42,105 @@ p{
     height: 400px;
 }
 .websites #portfolio{
-     background-image: url("../images/portfolio.PNG");
+     background-image: url("../images/portfolio.png");
+    background-repeat: repeat-y;
      background-size: 650px;
      background-position: center;
-    color: rgba(0,0,0,0);
  }
 .websites #portfolio:hover{
-    color: rgba(0,0,0,1);
-    background: slategrey;
+    background-image: url("../images/portfolioO.png");
+    background-repeat: repeat-y;
+}
+#port-text{
+    opacity: 0;
+}
+#port-text:hover{
+    opacity: unset;
+}
+.tags{
+    background-color: lightgrey;
+    border: 1px solid #000000;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.websites .Demo,.Code{
+    background-color: lightgrey;
+    border: 1px solid #000000;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+    align-content: center;
 }
 .websites #hms{
-    background-image: url("../images/hms.PNG");
-    background-size: 450px;
+    background-image: url("../images/hms.png");
+    background-repeat: repeat-y;
+    background-size: auto;
     background-position: center;
-    color: rgba(0,0,0,0);
 }
 .websites #hms:hover{
-   opacity: 0.5%;
+    background-image: url("../images/hmsO.png");
+    background-repeat: repeat-y;
+    opacity: unset;
+}
+.websites #hms #viewBtn{
+    text-align: center;
+    padding-top: 300px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: aquamarine;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: aquamarine;
+    color: white;
 }

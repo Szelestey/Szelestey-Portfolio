@@ -1,15 +1,30 @@
 // JavaScript source code
-var btn = document.getElementById("viewBtn");
-var modal = document.getElementById("hmsModal");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-    modal.style.display = "block";
+var btn = document.querySelectorAll("button.viewBtn")
+var modals = document.querySelectorAll(".modal")
+var spans = document.getElementsByClassName("close");
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+    btn[i].onclick = function(e) {
+        e.preventDefault();
+        modal = document.querySelector(e.target.getAttribute("href"));
+        modal.style.display = "block";
+    }
 }
-span.onclick = function () {
-    modal.style.display = "none";
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+    spans[i].onclick = function() {
+        for (var index in modals) {
+            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+        }
+    }
 }
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        for (var index in modals) {
+            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+        }
     }
 }

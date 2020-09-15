@@ -17,6 +17,18 @@ h1{
     color: black;
     margin-left: 20%;
 }
+.projects #title a{
+    font-family: "Vladimir Script";
+    font-weight: bold;
+    font-size: 80px;
+    text-align: left;
+    color: black;
+    margin-left: 20%;
+    text-decoration: none;
+}
+.projects #title a:hover{
+    color: rgba(0,0,0,0.6);
+}
 h2 {
     text-align: center;
 }
@@ -41,55 +53,71 @@ p{
     flex-direction: row;
     height: 400px;
 }
-.websites #portfolio{
-     background-image: url("../images/portfolio.png");
-    background-repeat: repeat-y;
-     background-size: 650px;
-     background-position: center;
- }
-.websites #portfolio:hover{
-    background-image: url("../images/portfolioO.png");
-    background-repeat: repeat-y;
-}
-#port-text{
-    opacity: 0;
-}
-#port-text:hover{
-    opacity: unset;
-}
-.tags{
-    background-color: lightgrey;
-    border: 1px solid #000000;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    font-size: 16px;
-    margin-left: 10px;
-}
-.websites .Demo,.Code{
-    background-color: lightgrey;
-    border: 1px solid #000000;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    font-size: 16px;
-    margin-left: 10px;
-    align-content: center;
-}
-.websites #hms{
-    background-image: url("../images/hms.png");
-    background-repeat: repeat-y;
-    background-size: auto;
-    background-position: center;
-}
-.websites #hms:hover{
-    background-image: url("../images/hmsO.png");
-    background-repeat: repeat-y;
-    opacity: unset;
-}
-.websites #hms #viewBtn{
+.projects .card .card-body{
     text-align: center;
     padding-top: 300px;
+    opacity: 0;
+}
+.projects .card .card-body:hover{
+    opacity: unset;
+}
+.projects .card .card-body i{
+    display: inline-block;
+    margin-right: 1em;
+}
+.projects .card{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.projects #portfolio{
+    background-image: url("../images/portfolio.png");
+}
+.projects #portfolio:hover{
+    background-image: url("../images/portfolioO.png");
+}
+.projects #hms{
+    background-image: url("../images/hms.png");
+}
+.projects #hms:hover{
+    background-image: url("../images/hmsO.png");
+}
+.projects #soccer{
+    background-image: url("../images/soccer.png");
+}
+.projects #soccer:hover{
+    background-image: url("../images/soccer.png");
+}
+.projects #deadlift{
+    background-image: url("../images/deadlift.png");
+}
+.projects #deadlift:hover{
+    background-image: url("../images/deadlift.png");
+}
+.projects #shapes{
+    background-image: url("../images/jogl.png");
+}
+.projects #shapes:hover{
+    background-image: url("../images/jogl.png");
+}
+.projects #smile{
+    background-image: url("../images/2d.png");
+}
+.projects #smile:hover{
+    background-image: url("../images/2d.png");
+}
+.viewBtn{
+    background-color: slategrey;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.viewBtn:hover{
+    border: none;
+    color: black;
 }
 /* The Modal (background) */
 .modal {
@@ -108,10 +136,12 @@ p{
 
 /* Modal Content */
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
+    background-color: lightgrey;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -126,21 +156,83 @@ p{
 
 .close:hover,
 .close:focus {
-    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: aquamarine;
-    color: white;
+#viewModal1 .colFirst{
+    background-image: url("../images/portfolio.png");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 500px;
+    float: left;
 }
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: aquamarine;
-    color: white;
+#viewModal2 .colFirst{
+    background-image: url("../images/hms.png");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+.colSecond{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.title h3{
+    font-size: 60px;
+}
+.tags{
+    background-color: lightgrey;
+    border: 1px solid #000000;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.btnGroup{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 5%;
+}
+.btnGroup i{
+    margin-right: 1em;
+}
+.viewDemo{
+    background-color: slategrey;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    outline: none;
+}
+.viewDemo:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    outline: black;
+}
+.viewCode{
+    background-color: slategrey;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    outline: none;
+}
+.viewCode:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    outline: black;
+}
+.modals .about{
+    padding-top: 3%;
+}
+.modals .about p{
+    margin-left: 5%;
+}
+.projects .container-fluid {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }

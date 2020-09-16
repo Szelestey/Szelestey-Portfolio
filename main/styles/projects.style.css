@@ -27,7 +27,7 @@ h1{
     text-decoration: none;
 }
 .projects #title a:hover{
-    color: rgba(0,0,0,0.6);
+    color: slategrey;
 }
 h2 {
     text-align: center;
@@ -86,25 +86,37 @@ p{
     background-image: url("../images/soccer.png");
 }
 .projects #soccer:hover{
-    background-image: url("../images/soccer.png");
+    background-image: url("../images/soccerO.png");
 }
 .projects #deadlift{
     background-image: url("../images/deadlift.png");
 }
 .projects #deadlift:hover{
-    background-image: url("../images/deadlift.png");
+    background-image: url("../images/deadliftO.png");
 }
 .projects #shapes{
     background-image: url("../images/jogl.png");
 }
 .projects #shapes:hover{
-    background-image: url("../images/jogl.png");
+    background-image: url("../images/joglO.png");
 }
 .projects #smile{
     background-image: url("../images/2d.png");
 }
 .projects #smile:hover{
-    background-image: url("../images/2d.png");
+    background-image: url("../images/2dO.png");
+}
+.projects #seaport{
+    background-image: url("../images/seaport.png");
+}
+.projects #seaport:hover{
+    background-image: url("../images/seaportO.png");
+}
+.projects #bubbleSort{
+    background-image: url("../images/bubblesort.png");
+}
+.projects #bubbleSort:hover{
+    background-image: url("../images/bubblesortO.png");
 }
 .viewBtn{
     background-color: slategrey;
@@ -159,21 +171,42 @@ p{
     text-decoration: none;
     cursor: pointer;
 }
-#viewModal1 .colFirst{
-    background-image: url("../images/portfolio.png");
+.modal .colFirst{
     background-size: cover;
     background-position: center;
     width: 50%;
     height: 500px;
     float: left;
 }
+#viewModal1 .colFirst{
+    background-image: url("../images/portfolio.png");
+}
 #viewModal2 .colFirst{
     background-image: url("../images/hms.png");
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 600px;
-    float: left;
+}
+#viewModal3 .colFirst{
+    background-image: url("../images/deadlift.png");
+}
+#viewModal4 .colFirst{
+    background-image: url("../images/soccer.png");
+}
+#viewModal5 .colFirst{
+    background-image: url("../images/2d.png");
+}
+#viewModal6 .colFirst{
+    background-image: url("../images/jogl.png");
+}
+#viewModal7 .colFirst{
+    background-image: url("../images/seaport.png");
+}
+#viewModal8 .colFirst{
+    background-image: url("../images/bubblesort.png");
+}
+#viewModal9 .colFirst{
+    background-image: url("../images/hms.png");
+}
+#viewModal10 .colFirst{
+    background-image: url("../images/hms.png");
 }
 .colSecond{
     width: 50%;
